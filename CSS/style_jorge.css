@@ -1,0 +1,608 @@
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: "Bellefair", serif;
+}
+.bellefair-regular {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+* { box-sizing: border-box; }
+a, p, h1, h2, figcaption{
+    color: white;
+}
+.text{
+    color: white;
+}
+.cabeca{
+    font-size: 0.8rem;
+    display: grid;
+    position: sticky;
+    top: 0;
+    margin-top: -25px;
+    margin-bottom: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "logo   nav"
+    ".  pesquisa";
+    background-color: rgb(77, 77, 77);
+}
+.logo{
+    border-radius: 20px;
+    margin: 5px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    grid-area: logo;
+}
+.menu {
+    display: grid;
+    margin: 5px;
+    grid-area: nav;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    border-radius: 20px;
+    align-content: center;
+    padding: 10px;
+}
+.pesquisa{
+    display: flex;
+    max-width: 350px;
+    min-width: 250px;
+    margin: 5px;
+    font-size: 0.8rem;
+    justify-content: center;
+    background-color: rgb(168, 168, 168);
+    border-radius: 20px;
+    margin-top: -40px;
+    margin-left: 60%;
+    grid-area: pesquisa;
+}
+.pesquisa p{
+    color: rgb(63, 63, 63);
+    margin-right: 10px;
+    margin-top: 8px;
+}
+main {
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    grid-template-areas:
+    "sedimentar  sedimentar"
+    "campanhas   campanhas"
+    "download    download"
+}
+.campanhas{
+    display: grid;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    grid-area: campanhas;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    margin: 5%;
+    grid-template-areas:    
+    "titulo     titulo"
+    "global     distopia"
+}
+.download{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    grid-area: download;
+}
+.download > p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.sedimentar{
+    color: white;
+    display: block;
+    grid-area: sedimentar;
+    text-align: center;
+}
+.sedimentar > h1{
+    font-size: 3rem;
+}
+.sedimentar > p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.titulo{
+    grid-area: titulo;
+}
+.global{
+    justify-items: center;
+    display: grid;
+    grid-area: global;
+}
+.distopia{
+    display: grid;
+    justify-items: center;
+    grid-area: distopia;
+}
+.capasedi{
+    width: 550px;
+    height: 800px;
+    object-fit: cover;
+}
+footer{
+    display: grid;
+    background-image: linear-gradient(to bottom, rgb(179, 179, 179), rgb(71, 71, 71), rgb(26, 26, 26));
+    grid-template-columns: 1fr 1fr;
+    margin-top: 500px;
+    grid-template-areas:
+    "formulario     redesocial"
+    "direitos   direitos"
+}
+.formulario{
+    grid-area: formulario;
+    text-align: center;
+    border-radius: 20px;
+    margin: 2%;
+}
+.formulario >h3{
+        color: white;
+        margin-top: 30px;
+        margin-bottom: -5px;
+}
+.direitos{
+    font-size: 0.5rem;
+    margin: 10px;
+    grid-area: direitos;
+}
+.direitos > p{
+    font-size: 1rem;
+}
+.redesocial{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: redesocial;
+    text-align: center;
+    border-radius: 20px;
+    margin: 2%;
+    gap: 10px;
+    grid-template-areas:
+    "redetitulo redetitulo  redetitulo"
+}
+.redetitulo{
+    grid-area: redetitulo;
+}
+body{
+    background-image: linear-gradient(to bottom, rgb(107, 107, 107), rgb(43, 43, 43), rgb(26, 26, 26));
+    background-attachment: fixed;
+}
+/*index2*/
+.index2{
+    display: grid;
+    text-align: center;
+    padding-top: 80px;
+    margin: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+    "livro  ficha   bestiario"
+}
+.index2 > p{
+    font-size: 2rem;
+}
+.livro{
+    grid-area: livro;
+}
+.ficha{
+    grid-area: ficha;
+}
+.bestiario{
+    grid-area: bestiario;
+}
+/*inddex2*/
+/*inddex3*/
+.index3{
+    background-image: linear-gradient(to bottom, rgb(228, 228, 228), rgb(122, 122, 122), rgb(114, 114, 114));
+    border-radius: 30px;
+    margin: 120px;
+    text-align: center;
+    justify-items: center;
+}
+.index3 > main{
+    display: block;
+}
+.formes > input{
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    border-radius: 20px;
+    max-width: 70%;
+    max-height: 70px;
+    width: 900px;
+    height: 70px;
+}
+.data{
+    font-size: 170%;
+    color: rgb(209, 209, 209);
+}
+.termos{
+    height: 150%;
+}
+.login{
+    margin-bottom: 40px;
+}
+.index3 > h1{
+    color: black;
+}
+.index3 > p{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+/*inddex3*/
+/*inddex4*/
+.index4{
+    display: block;
+    background-image: linear-gradient(to bottom, rgb(228, 228, 228), rgb(122, 122, 122), rgb(114, 114, 114));
+    border-radius: 30px;
+    margin: 120px;
+    text-align: center;
+}
+.formus > input{
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    border-radius: 20px;
+    max-width: 70%;
+    max-height: 70px;
+    width: 900px;
+    height: 70px;
+}
+.gugle{
+    max-width: 40px;
+    max-height: 40px;
+    margin: 10px;
+}
+.faca{
+    max-width: 40px;
+    max-height: 40px;
+    margin: 10px;
+}
+.appli{
+    max-width: 40px;
+    max-height: 40px;
+    margin: 10px;
+    margin-top: -5px;
+}
+.index4 > h1{
+    color: black;
+}
+.index4 > p{
+    margin-bottom: 10px;
+}
+/*inddex4*/
+/*inddex5*/
+.index5 > p{
+    font-size: 1.5rem;
+}
+.index5{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    padding-top: 120px;
+    gap: 150px;
+    margin: 15px;
+}
+.campanha1, .campanha2, .campanha3, .campanha4, .campanha5, .campanha6{
+    height:350px;
+    width: 350px;
+}
+/*inddex5*/
+@media (max-width: 1070px){
+    .cabeca{
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+        grid-template-areas:
+        "logo   logo"
+        "nav    nav"
+        "pesquisa pesquisa"
+    }
+    .menu ul{
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    main {
+        display: grid;
+        grid-template-areas:
+        "sedimentar sedimentar"
+        "campanhas  campanhas"
+        "download   download"
+    }
+    .index2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            grid-template-areas:
+            "livro  livro"
+            "ficha  ficha"
+            "bestiario  bestiario";
+        
+    }
+    .index3 > input{
+        text-align: center;
+        background-color: rgb(87, 87, 87);
+        border-radius: 20px;
+        max-width: 50%;
+        max-height: 70px;
+        width: 900px;
+        height: 70px;
+    }
+    .index4 > input{
+        text-align: center;
+        background-color: rgb(87, 87, 87);
+        border-radius: 20px;
+        max-width: 50%;
+        max-height: 70px;
+        width: 900px;
+        height: 70px;
+    }
+    .index5{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .campanhas{
+        gap: 10px;
+        grid-template-areas:
+        "titulo titulo"
+        "global global"
+        "distopia   distopia"
+    }
+    .pesquisa{
+        display: flex;
+        max-width: 250px;
+        min-width: 200px;
+        margin: 5px;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 1%;
+    }
+}
+@media (max-width: 680px){
+    main{
+        font-size: 0.8rem;
+        margin: 5px;
+    }
+    .cabeca{
+        position:relative;
+        top: 0;
+        margin-top: -25px;
+        margin-bottom: 30px;
+        font-size: 0.7rem;
+        grid-template-areas:
+        "logo   logo"
+        "nav    nav"
+        "pesquisa   ."
+    }
+    .pesquisa{
+        display: flex;
+        max-width: 250px;
+        min-width: 200px;
+        margin: 5px;
+        justify-content: center;
+        margin-top: 10px;
+        margin-right: 75%;
+    }
+    .menu ul{
+        margin: 10px;
+        display: inline-block;
+        justify-content: center;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        grid-template-areas:
+        "formulario"
+        "redesocial"
+        "direitos"
+    }
+    .redesocial{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-area: redesocial;
+        text-align: center;
+        border-radius: 20px;
+        margin: 2%;
+        gap: 10px;
+        grid-template-areas:
+        "redetitulo redetitulo"
+    }
+    .campanhas{
+        margin: 5px;
+    }
+    .global > p{
+        margin: 5%;
+    }
+    .distopia > p{
+        margin: 5%;
+    }
+    .baixar{
+    margin: 10px;
+    justify-content: center;
+    }
+    .capasedi{
+    width: 300px;
+    height: 550px;
+    object-fit: cover;
+    }
+    .index2{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px;
+        grid-template-areas:
+        "livro"
+        "ficha"
+        "bestiario";
+    }
+    .index3{
+        display: block;
+        text-align: center;
+        width: 350px;
+        margin: auto;
+    }
+    .index3 > input{
+        text-align: center;
+        background-color: rgb(87, 87, 87);
+        border-radius: 20px;
+        max-width: 70%;
+        max-height: 70px;
+        width: 900px;
+        height: 70px;
+    }
+    .index4{
+        display: block;
+        background-image: linear-gradient(to bottom, rgb(228, 228, 228), rgb(122, 122, 122), rgb(114, 114, 114));
+        border-radius: 30px;
+        text-align: center;
+        width: 350px;
+        margin: auto;
+    }
+    .index4 > input{
+        text-align: center;
+        background-color: rgb(87, 87, 87);
+        border-radius: 20px;
+    }
+    .index5{
+        margin: auto;
+    }
+    .campanha1, .campanha2, .campanha3, .campanha4, .campanha5, .campanha6{
+        height:280px;
+        width: 280px;
+    }
+    .index5 > p{
+        font-size: 1.2rem;;
+    }
+}
+@media (max-width: 360px){
+    main{
+        font-size: 1rem;
+        margin: 5px;
+    }
+    .index2{
+        display: grid;
+        margin: 10px;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "livro"
+        "ficha"
+        "bestiario";
+    }
+    .index3{
+        display: block;
+        text-align: center;
+        width: 320px;
+        margin: auto;
+    }
+    .index3 > input{
+        text-align: center;
+        background-color: rgb(87, 87, 87);
+        border-radius: 20px;
+        max-width: 70%;
+        max-height: 70px;
+        width: 900px;
+        height: 70px;
+    }
+    .index4{
+        display: block;
+        background-image: linear-gradient(to bottom, rgb(228, 228, 228), rgb(122, 122, 122), rgb(114, 114, 114));
+        border-radius: 30px;
+        text-align: center;
+        width: 320px;
+        margin: auto;
+    }
+    .index4 > input{
+        text-align: center;
+        background-color: rgb(87, 87, 87);
+        border-radius: 20px;
+    }
+    .index5{
+        margin: auto;
+        margin-left: -3px;
+    }
+    .campanha1, .campanha2, .campanha3, .campanha4, .campanha5, .campanha6{
+        height:280px;
+        width: 280px;
+    }
+    .index5 > figure > p{
+        font-size: 1.2rem;
+    }
+    .cabeca{
+        position:relative;
+        top: 0;
+        font-size: 0.5rem;
+        margin-top: -25px;
+        margin-bottom: 30px;
+        grid-template-areas:
+        "logo   logo"
+        "nav    nav"
+        "pesquisa   ."
+    }
+    .pesquisa{
+        display: flex;
+        max-width: 250px;
+        min-width: 200px;
+        margin: 5px;
+        justify-content: center;
+        margin-top: 10px;
+        margin-right: 75%;
+    }
+    .menu ul{
+        margin: 10px;
+        display: inline-block;
+        justify-content: center;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        width: 100%;
+        grid-template-areas:
+        "formulario"
+        "redesocial"
+        "direitos"
+    }
+    .redesocial{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-area: redesocial;
+        text-align: center;
+        border-radius: 20px;
+        margin: 2%;
+        gap: 10px;
+        grid-template-areas:
+        "redetitulo redetitulo"
+    }
+    .campanhas{
+    display: grid;
+    font-size: 0.6rem;
+    margin: 5px;
+    }
+    .baixar{
+    margin: 10px;
+    justify-content: center;
+    }
+    .capasedi{
+    width: 300px;
+    height: 550px;
+    object-fit: cover;
+    }
+    .direitos > p{
+        font-size: 0.8rem;
+    }
+} 
